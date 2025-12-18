@@ -1,4 +1,4 @@
-# Session 2: Ad-hoc Commands & Playbooks
+# Session 2: Ansible Modules & Ad-hoc Commands
 
 ![Ansible Modules](/images/modules.png)
 
@@ -130,6 +130,18 @@ A playbook is a **YAML file** containing one or more “plays” that define tas
         key: value
 ```
 
+**User Module** 
+```yaml
+---
+- name: Ansible playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Create User John
+      user:
+        name: John
+```
+
 **File Module** 
 ```yaml
 ---
@@ -170,6 +182,45 @@ A playbook is a **YAML file** containing one or more “plays” that define tas
         dest: /tmp/sample.txt
         mode: '0644'
 ```
+
+**Method 2: Create file with inline content**
+```yaml
+---
+- name: Ansible playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Create file with content
+      copy:
+        content: "Hello from Ansible"
+        dest: /tmp/hello.txt
+        mode: '0644'
+```
+
+### Key Differences: file vs copy Module
+
+| Feature | file Module | copy Module |
+|---------|-------------|-------------|
+| Create empty file | ✅ `state=touch` | ❌ Must have content |
+| Create file with content | ❌ | ✅ `content=` or `src=` |
+| Create directory | ✅ `state=directory` | ❌ |
+| Delete files | ✅ `state=absent` | ❌ |
+| Set permissions | ✅ | ✅ |
+| Copy from control node | ❌ | ✅ |
+| Manage attributes only | ✅ | ❌ |
+
+**When to use file:**
+- Creating directories
+- Creating empty files
+- Deleting files/directories
+- Changing permissions/ownership only
+- Creating links
+
+**When to use copy:**
+- Copying files from control node
+- Creating files with specific content
+- Deploying configuration files
+- Updating file content
 
 **SEVICE Module**
 
