@@ -1,4 +1,4 @@
-# Session 2: Ansible Modules & Ad-hoc Commands
+# Session 2: Ad-hoc Commands & Playbooks
 
 ![Ansible Modules](/images/modules.png)
 
