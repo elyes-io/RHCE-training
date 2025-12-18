@@ -1,4 +1,4 @@
-# RHCE: RedHat Certified Engineer - Session 1: Introduction & Setup
+# Session 1: Introduction & Setup
 
 ![Ansible Logo](/images/ansible-logo.png)
 
