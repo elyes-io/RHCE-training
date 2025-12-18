@@ -210,8 +210,6 @@ inventory = ./inventory
 remote_user = ansible
 [privilege_escalation]
 become = True
-become_method = sudo
-become_user = root
 ```
 
 **Explanation of Common Settings:**
@@ -221,8 +219,6 @@ become_user = root
 | `inventory` | Location of your inventory file |
 | `remote_user` | Default user for SSH connections |
 | `become` | Enable privilege escalation (sudo) |
-| `become_method` | Method for privilege escalation (sudo, su, etc.) |
-| `become_user` | User to become (usually root) |
 
 **Ad-hoc Commands – Objective:**  
 Validate that the **Ansible inventory** and **ansible.cfg** are correctly configured and that the control node can communicate with all managed nodes.
