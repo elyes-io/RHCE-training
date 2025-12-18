@@ -90,3 +90,35 @@ ansible all -m shell -a "echo $USER"
 ```bash
 ansible all -m shell-a "echo $HOME"
 ```
+
+# Understanding the `state` Attribute in Ansible (General Concept)
+
+In Ansible, the `state` attribute is one of the most commonly used parameters in modules. It allows you to declare the **desired condition** of a resource on a managed node.
+
+Think of `state` as a **goal**: it tells Ansible:
+
+> "I want this resource to be in this specific state."
+
+Ansible will check the current condition of the resource and **only make changes if the current state does not match the desired state**, ensuring **idempotence** (task dosen't get executed more than one time UNCHANGED STATE).
+
+---
+
+## Key Points About `state`
+
+### 1. Represents Desired State
+- `state` defines what the resource **should be**, not how to make it that way.
+- Example: a file can have a state of `present` (it should exist) or `absent` (it should be removed).
+
+### 2. Module-Specific
+- Different modules support different `state` values.
+- Always consult the module documentation to know which states are valid.
+
+### 3. Supports Idempotency
+- Ansible compares the **current state** with the **desired state**.
+- If the resource is already in the desired state, Ansible does nothing.
+- This prevents unnecessary changes and ensures predictable automation.
+
+### 4. Examples of Typical `state` Goals
+- **Existence**: Does the resource exist? (`present` / `absent`)
+- **Running Status**: Is a service running or stopped? (`started` / `stopped`)
+- **Configuration**: Is a directory or file created with proper permissions? (`directory` / `file`)
