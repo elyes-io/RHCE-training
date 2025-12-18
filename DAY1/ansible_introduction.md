@@ -38,7 +38,7 @@ Ansible is an open-source IT automation tool that helps automate:
 
 ### Architecture Diagram
 
-![Ansible Architecture](images/ansible-architecture.png)
+![Ansible Architecture](/images/ansible-architecture.png)
 
 *Figure 2: Control Node communicating with Managed Nodes via SSH*
 
