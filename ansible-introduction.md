@@ -136,10 +136,6 @@ ssh ansible@managed-node-ip
 exit
 ```
 
-![SSH Setup](https://www.techrepublic.com/wp-content/uploads/2022/06/ansible-ssh-770x433.jpg)
-
-*Figure 3: SSH key-based authentication setup*
-
 ---
 
 ## Inventory and Configuration Files
@@ -205,10 +201,6 @@ or (ip adresses)
 webservers
 dbservers
 ```
-
-![Inventory Structure](https://docs.ansible.com/ansible/latest/_images/ansible_inventory_overview.png)
-
-*Figure 4: Inventory hierarchy and grouping*
 
 ### ansible.cfg Format Example
 
