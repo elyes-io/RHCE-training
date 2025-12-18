@@ -1,6 +1,6 @@
 # RHCE: RedHat Certified Engineer - Session 1: Introduction & Setup
 
-![Ansible Logo](https://www.ansible.com/hubfs/2016_Images/Assets/Ansible-Mark-Large-RGB-Pool.png)
+![Ansible Logo](/images/ansible-logo.png)
 
 ## Objective
 By the end of this session, you will be able to:
