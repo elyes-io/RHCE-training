@@ -3,7 +3,7 @@
 **Definition:**  
 A playbook is a **YAML file** containing one or more "plays" that define tasks to be executed on managed nodes. Playbooks are **repeatable, version-controlled, and human-readable**.  
 
-![Ansible Modules](/images/plabooks.png)
+![Ansible Modules](/images/playbooks.png)
 
 **Playbooks vs Ad-hoc Commands:**
 
