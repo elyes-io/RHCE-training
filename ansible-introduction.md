@@ -32,19 +32,13 @@ Ansible is an open-source IT automation tool that helps automate:
 | **Idempotent** | Running the same task multiple times produces the same result |
 | **Extensible** | Supports modules for various services and systems |
 
-**Ansible Overview Diagram:**
-
-![Ansible Overview](images/ansible-architecture.png)
-
-*Figure 1: Ansible automation workflow and capabilities*
-
 ---
 
 ## Agentless Architecture & YAML Syntax
 
 ### Architecture Diagram
 
-![Ansible Architecture](https://miro.medium.com/v2/resize:fit:1400/1*yW1U74PRos3_Q0C39hkEhQ.png)
+![Ansible Architecture](images/ansible-architecture.png)
 
 *Figure 2: Control Node communicating with Managed Nodes via SSH*
 
