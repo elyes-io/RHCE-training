@@ -222,7 +222,7 @@ A playbook is a **YAML file** containing one or more “plays” that define tas
 - Deploying configuration files
 - Updating file content
 
-**SEVICE Module**
+**SERVICE Module**
 
 ```yaml
 ---
