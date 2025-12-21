@@ -113,7 +113,7 @@ su - ansible
 sudo dnf update -y
 
 # 3. Install Ansible
-sudo dnf install ansible -y
+sudo dnf install ansible-core -y
 
 # 4. Verify installation
 ansible --version
