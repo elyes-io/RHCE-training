@@ -127,5 +127,3 @@ Run the playbook using:
 - A password file
 
 ---
-
-**End Of Lab**
