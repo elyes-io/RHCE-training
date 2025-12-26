@@ -2,12 +2,12 @@
 
 ## 📋 Table of Contents
 - [Ansible Cron Module](#ansible-cron-module)
-- [Online Roles (Internet Available)](#online-roles-internet-available)
-- [Offline Roles (No Internet)](#offline-roles-no-internet)
+- [Offline Roles](#offline-roles)
+- [Online Roles](#online-roles)
 
 ---
 
-## ⏰ Ansible Cron Module
+# ⏰ Ansible Cron Module
 
 ### Basic Syntax
 ```yaml
@@ -150,7 +150,7 @@
 
 ---
 
-## 🌐 Offline Roles
+# Offline Roles
 
 ### Role 1: Apache Web Server
 
@@ -209,7 +209,7 @@ ansible-galaxy init apache
 
 ---
 
-## 🌐 Online Roles
+# Online Roles
 
 ### Role 1: Install geerlingguy.nginx Role using requirements.yaml
 
@@ -221,7 +221,7 @@ ansible-galaxy init apache
 ```
 
 ```bash
-    ansible-galaxy install -r requirements.yaml -p ./myroles
+ansible-galaxy install -r requirements.yaml -p ./myroles
 ```
 
 ### Playbook Using Roles
@@ -249,3 +249,5 @@ roles_path=/home/ansible/myroles:/usr/share/ansible/roles:/etc/ansible/roles
 [privilege_escalation]
 become=true
 ```
+
+---
